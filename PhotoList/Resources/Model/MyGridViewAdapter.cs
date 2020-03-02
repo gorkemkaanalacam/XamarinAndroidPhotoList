@@ -31,10 +31,6 @@ namespace PhotoList.Resources.Model
 
             View itemView = convertView ?? LayoutInflater.From(_context).Inflate(Resource.Layout.MyGridViewCell, parent, false);
             var tvDisplayName = itemView.FindViewById<ImageView>(Resource.Id.tvDisplayName);
-            var imgThumbail = itemView.FindViewById<ImageView>(Resource.Id.imgThumbnail);
-
-            imgThumbail.SetScaleType(ImageView.ScaleType.CenterCrop);
-            imgThumbail.SetPadding(8, 8, 8, 8);
 
             //new DataService().GetImages();
 
